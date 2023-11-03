@@ -5,10 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
     overflow-x: hidden;
 }
 
@@ -29,6 +31,8 @@ header{
     font-size: 2em;
     color: #fff;
     user-select: none;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .navigation a{
@@ -71,21 +75,33 @@ header{
 
 .parallex{
     position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 110vh;
-    background: url(background.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    justify-content: center;
+    overflow: hidden;
+  
+}
+.parallex::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    background: linear-gradient(to top,#1c0522,transparent);
 }
 
 #text{
     position: absolute;
-    font-size: 3.5em;
-    color: #1b283a;
+    white-space: nowrap;
+    font-size: 3em;
+    color: #fff;
     text-shadow: 2px 4px 5px #f9f9f9;
+    z-index: 9;
+    
 }
 
 .parallex img{
@@ -93,27 +109,39 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     pointer-events: none;
 }
 
-.parallex img#gate-left{
-    transform: translate(-282px);
-    position: fixed;
+.parallex img#moon{
+    mix-blend-mode: screen;
 }
 
-.parallex img#gate-right{
-    transform: translate(305px);
-    position: fixed;
+.parallex img#mountains_front{
+    z-index: 10;
+}
+
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 0.8em;
+    z-index: 9;
+    transform: translateY(100px);
 }
 
 .sec{
     position: relative;
-    background: #020912;
+    background: #1c0522;
     padding: 30px 100px;
 }
 
 .sec h2{
-    padding-top: 75px;
+    /* padding-top: 75px; */
     font-size: 3em;
     color: #fff;
     margin-bottom: 10px;
