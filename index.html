@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNEHASISH NATH</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <header>
         <h2 class="logo">
-            Logo
+            <img src="Snehasish Nath-logos_white.png" alt="LOGO">
 
         </h2>
         <nav class="navigation">
@@ -27,83 +28,140 @@
 
 
     <section class="parallex">
+        <h4 id="text0">Hello, <span>I'am</span></h4>
         <h2 id="text">Snehasish Nath</h2>
+        <h2 id="text1">Web Developer</h2>
         <img src="stars.png" id="stars" alt="">
         <img src="moon.png" id="moon" alt="">
         <img src="mountains_behind.png" id="mountains_behind" alt="">
         <img src="mountains_front.png" id="mountains_front" alt="">
-        <a href="#" id="btn">Download CV</a>
+        <a href="Resume_Web_Developer.pdf" download id="btn">Download CV</a>
 
     </section>
 
 
-    <section class="sec">
-        <h2>Parallex Scrolling Website</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Vitae animi, dignissimos, error voluptatibus
-            , praesentium ad suscipit tempore culpa dolores
-            est accusantium! Sed nihil adipisci ducimus
-            mollitia aut, optio quae corporis repellendus eos
-            cum consequatur error rem quod officiis neque
-            dolore tenetur reiciendis sequi minima delectus
-            pariatur commodi et consequuntur aliquam. Quae
-            nostrum exercitationem blanditiis natus rerum
-            perferendis aspernatur, assumenda, nihil neque
-            eveniet voluptatum quis officiis quos sunt
+    <div id="about">
+        <div class="row1">
+            <div class="col1">
+                <img src="me.jpg" alt="Me">
+            </div>
+            <div class="col2">
+                <h1 class="sub-title">About Me</h1>
 
-            ratione fugiat accusamus harum minima asperiores
-            temporibus ab alias similique! Reiciendis
-            provident fugiat quasi ratione aliquid dolorum
-            cum dicta id quod harum, dolore unde porro sunt
-            expedita temporibus quidem officiis magni,
-            incidunt et optio. Dignissimos iusto cumque
-            quidem, iste ut rerum! Perspiciatis ipsam
-            maxime dolorum obcaecati cum porro.
-            Sed necessitatibus quod omnis vel. <br><br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Vitae animi, dignissimos, error voluptatibus
-            , praesentium ad suscipit tempore culpa dolores
-            est accusantium! Sed nihil adipisci ducimus
-            mollitia aut, optio quae corporis repellendus eos
-            cum consequatur error rem quod officiis neque
-            dolore tenetur reiciendis sequi minima delectus
-            pariatur commodi et consequuntur aliquam. Quae
-            nostrum exercitationem blanditiis natus rerum
-            perferendis aspernatur, assumenda, nihil neque
-            eveniet voluptatum quis officiis quos sunt
+                <p>Hey there! I'm Snehasish Nath, a Web Developer driven by a passion for crafting sleek and efficient
+                    websites. My toolkit includes HTML5, CSS, Bootstrap, and JavaScript, skills I've honed through my
+                    Bachelor's in Computer Science and Engineering at IKG Punjab Technical University.</p>
 
-            ratione fugiat accusamus harum minima asperiores
-            temporibus ab alias similique! Reiciendis
-            provident fugiat quasi ratione aliquid dolorum
-            cum dicta id quod harum, dolore unde porro sunt
-            expedita temporibus quidem officiis magni,
-            incidunt et optio. Dignissimos iusto cumque
-            quidem, iste ut rerum! Perspiciatis ipsam
-            maxime dolorum obcaecati cum porro.
-            Sed necessitatibus quod omnis vel. <br><br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Vitae animi, dignissimos, error voluptatibus
-            , praesentium ad suscipit tempore culpa dolores
-            est accusantium! Sed nihil adipisci ducimus
-            mollitia aut, optio quae corporis repellendus eos
-            cum consequatur error rem quod officiis neque
-            dolore tenetur reiciendis sequi minima delectus
-            pariatur commodi et consequuntur aliquam. Quae
-            nostrum exercitationem blanditiis natus rerum
-            perferendis aspernatur, assumenda, nihil neque
-            eveniet voluptatum quis officiis quos sunt
+                <p>Intrigued by the power of data, I dived into Data Science as a trainee at Internshala, mastering
+                    predictive modeling and machine learning. I love translating complex data into actionable insights.
+                </p>
+                <p>Python is my playground, where I design solutions that tackle real-world challenges. From crafting a
+                    fully functional Desktop Assistant to cloning Amazon's interface, I enjoy pushing the boundaries of
+                    what's possible.</p>
+                <p>When not coding, you'll find me participating in tech challenges, earning a "5 star Python Coder"
+                    badge on Hackerrank. I'm excited about the future of web development, constantly seeking ways to
+                    innovate and make a meaningful impact.</p>
+                <p>Let's create something amazing together!</p>
 
-            ratione fugiat accusamus harum minima asperiores
-            temporibus ab alias similique! Reiciendis
-            provident fugiat quasi ratione aliquid dolorum
-            cum dicta id quod harum, dolore unde porro sunt
-            expedita temporibus quidem officiis magni,
-            incidunt et optio. Dignissimos iusto cumque
-            quidem, iste ut rerum! Perspiciatis ipsam
-            maxime dolorum obcaecati cum porro.
-            Sed necessitatibus quod omnis vel. <br><br></p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
 
-    </section>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Developer</span><br>Designing Dynamic Interfaces for an Exceptional User
+                            Experience.</li>
+                        <li><span>Back-End Developer</span><br>Building Backend Excellence for Peak Performance.</li>
+                        <li><span>Python Developer</span><br>Weaving Python's Tapestry of Creativity.</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents " id="experience">
+                    <ul>
+                        <li><span>Data Science Trainee</span><br>Acquired comprehensive knowledge of data science
+                            fundamentals, including statistics, predictive modeling, and
+                            machine learning.</li>
+                        <li><span>Python Programming Trainee</span><br>Completed a comprehensive online training program
+                            on Python programming.</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech - CSE</span><br>IKG Punjab Technical University (2019 - 2023)</li>
+                        <li><span>Intermediate</span><br>K.V Silchar (2018)</li>
+                        <li><span>High School</span><br>K.V Silchar (2016)</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="experience">
+            <h2>Experience</h2>
+            <div class="field">
+                <div class="field1">
+                    <h3>Frontend Development</h3>
+                    <div class="part1">
+                        <div class="skill">
+                            <i class="fa-regular fa-circle-check"></i> HTML
+                            <p>Experienced</p>
+
+                        </div>
+                        <div class="skill">
+                            <i class="fa-regular fa-circle-check"></i> CSS
+                            <p>Experienced</p>
+
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <div class="skill">
+                            <i class="fa-regular fa-circle-check"></i> Bootstrap
+                            <p>Beginner</p>
+
+                        </div>
+                        <div class="skill sk2">
+                            <i class="fa-regular fa-circle-check"></i> JavaScript
+                            <p>Beginner</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="field2">
+                    <h3>Backend Development</h3>
+                    <div class="part1">
+                        <div class="skill">
+                            <i class="fa-regular fa-circle-check"></i> Python
+                            <p>Experienced</p>
+
+                        </div>
+                        <div class="skill">
+                            <i class="fa-regular fa-circle-check"></i> Node JS
+                            <p>Beginner</p>
+
+                        </div>
+                    </div>
+                    <div class="part1">
+                        <div class="skill">
+                            <i class="fa-regular fa-circle-check"></i> PHP
+                            <p>Beginner</p>
+
+                        </div>
+                        <div class="skill sk3">
+                            <i class="fa-regular fa-circle-check"></i> SQL
+                            <p>Beginner</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="script.js"></script>
