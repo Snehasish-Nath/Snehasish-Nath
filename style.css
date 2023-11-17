@@ -798,6 +798,7 @@ form .btn2 {
     }
     
     .skill {
+        font-size: 0.8rem;
         padding: 10px 20px;
         color: #41b88c;
         /* background-color: #41b88c; */
@@ -809,6 +810,7 @@ form .btn2 {
     
     .skill p {
         /* margin-left: 30px; */
+        font-size: 0.8rem;
         padding-left: 30px;
     }
     
