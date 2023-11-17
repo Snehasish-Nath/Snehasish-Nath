@@ -860,7 +860,7 @@ form .btn2 {
     
     #portfolio p {
         font-size: 0.6rem;
-        padding-top: 50px;
+        padding-top: 30px;
         text-align: center;
         color: #fff;
         text-shadow: 2px 4px 5px #b7b7b7;
@@ -880,7 +880,7 @@ form .btn2 {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 40px;
-        margin-top: 50px;
+        margin-top: 30px;
         /* background-color: #235e69; */
     }
     
@@ -914,12 +914,13 @@ form .btn2 {
         flex-direction: column;
         padding: 0 40px;
         text-align: center;
-        font-size: 15px;
+        font-size: 0.8rem;
         transition: height 0.5s;
         /* background-color: #fff685; */
     }
     
     .layer h3 {
+        font-size: 1rem;
         font-weight: 500;
         /* margin-bottom: 10px; */
         color: #fff;
@@ -955,12 +956,12 @@ form .btn2 {
         margin: 50px auto;
         width: fit-content;
         border: 1px solid #41b88c;
-        padding: 10px 40px;
+        padding: 5px 20px;
         border-radius: 6px;
         text-decoration: none;
         color: white;
         transition: background 0.5s;
-        font-size: 20px;
+        font-size: 1rem;
     }
     
     .btn:hover {
