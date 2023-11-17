@@ -849,6 +849,123 @@ form .btn2 {
     
     
     .sk3 {
-        padding-left: 47px;
+        padding-left: 40px;
     }
+    /* ----------------projects------------------- */
+
+    #portfolio {
+        padding: 30px;
+        background: #1c0522;
+    }
+    
+    #portfolio p {
+        font-size: 0.6rem;
+        padding-top: 50px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 2px 4px 5px #b7b7b7;
+    }
+    
+    #portfolio h1 {
+        width: 100%;
+        text-align: center;
+        /* padding-bottom: 20px; */
+        font-size: 1.2rem;
+        color: #fff;
+        text-shadow: 2px 4px 5px #b7b7b7;
+    }
+    
+    
+    .work-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+        /* background-color: #235e69; */
+    }
+    
+    .work img {
+        height: 280px;
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
+    }
+    
+    .work {
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        /* background-color: #a1143a; */
+    }
+    
+    .layer {
+        width: 100%;
+        height: 0px;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), #41b88c);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        font-size: 15px;
+        transition: height 0.5s;
+        /* background-color: #fff685; */
+    }
+    
+    .layer h3 {
+        font-weight: 500;
+        /* margin-bottom: 10px; */
+        color: #fff;
+    }
+    
+    .layer a {
+        margin-top: 20px;
+        color: #41b88c;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 50px;
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    
+    
+    .work:hover img {
+        transform: scale(1.1);
+        cursor: pointer;
+    
+    }
+    
+    .work:hover .layer {
+        height: 100%;
+        cursor: pointer;
+    }
+    
+    .btn {
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid #41b88c;
+        padding: 10px 40px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: white;
+        transition: background 0.5s;
+        font-size: 20px;
+    }
+    
+    .btn:hover {
+        background: #3d67ab;
+    
+    }
+
 }
