@@ -660,7 +660,7 @@ form .btn2 {
 
     .col1 {
         /* background-color: #ff1d58; */
-        height: 230px;
+        height: 330px;
         width: 100%;
         /* background-color: #ff1d58; */
         display: flex;
@@ -671,7 +671,7 @@ form .btn2 {
     }
 
     .col1 img {
-        height: 200px;
+        height: 300px;
         border-radius: 320px;
     }
 
@@ -689,13 +689,13 @@ form .btn2 {
         width: 100%;
         text-align: center;
         padding-bottom: 10px;
-        font-size: 1em;
+        font-size: 1.2rem;
         color: #fff;
         text-shadow: 2px 4px 5px #b7b7b7;
     }
 
     .col2 p {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 5px 10px;
         line-height: 30px;
         color: #c6c5c5;
@@ -710,7 +710,7 @@ form .btn2 {
 
     .tab-links {
         margin-right: 50px;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 500;
         cursor: pointer;
         position: relative;
@@ -735,7 +735,7 @@ form .btn2 {
     .tab-contents ul li {
         list-style: none;
         margin: 10px 10px;
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: #8ab5e6;
     }
 
@@ -759,7 +759,7 @@ form .btn2 {
         padding-bottom: 20px;
         /* position: absolute; */
         /* white-space: nowrap; */
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         color: #fff;
         text-shadow: 2px 4px 5px #b7b7b7;
     }
