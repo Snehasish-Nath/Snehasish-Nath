@@ -31,6 +31,12 @@ header {
     width: 80px;
 }
 
+.navigation ul li {
+    float: left;
+    list-style: none;
+}
+
+
 .navigation a {
     position: relative;
     font-size: 1em;
@@ -575,7 +581,7 @@ header {
 }
 
 .social-icons a:hover {
-    color: #0062ff;
+    color: #41b88c;
     transform: translateY(-5px);
 }
 
@@ -583,6 +589,10 @@ header {
     display: inline-block;
     background: #0062ff;
     font-size: 15px;
+}
+
+.btn.btn2:hover {
+    background: #41b88c;
 }
 
 .contact-right form {
@@ -637,9 +647,88 @@ form .btn2 {
 
 /* -------------- For Mobile View --------------------- */
 
+.navigation i {
+    display: none;
+}
 
 @media screen and (max-width:600px) {
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        /* background: red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
 
+    .navigation i {
+        display: block;
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    .navigation ul {
+        background-image: url(star-nav.jpg);
+        background-position: center;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 160px;
+        height: 50vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+
+    .navigation ul li {
+        display: block;
+        margin: 25px;
+
+    }
+
+    .navigation ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .navigation a {
+        position: relative;
+        font-size: 0.8rem;
+        color: #fff;
+        font-weight: 400;
+        text-decoration: none;
+        margin-left: 20px;
+        padding: 1px 5px;
+        transition: 0.5s;
+        /* background: yellowgreen; */
+    
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    #text {
+        font-size: 1.6rem;
+    }
+
+    #text1 {
+        font-size: 1.6rem;
+    }
+
+    /* ---------------------------------- */
     #about {
         width: 100%;
         /* background-color: #00ddff; */
@@ -647,6 +736,7 @@ form .btn2 {
         position: relative;
         background: #1c0522;
     }
+
     .row1 {
         /* background-color: #235e69; */
         width: 100%;
@@ -751,10 +841,12 @@ form .btn2 {
     .tab-contents.active-tab {
         display: block;
     }
+
     /* ------------------- */
-    .experience{
+    .experience {
         margin-top: 100px;
     }
+
     .experience h2 {
         width: 100%;
         height: 100%;
@@ -762,15 +854,15 @@ form .btn2 {
         padding-bottom: 20px;
         /* position: absolute; */
         /* white-space: nowrap; */
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         color: #fff;
         text-shadow: 2px 4px 5px #b7b7b7;
     }
-    
+
     .field {
         display: inline;
     }
-    
+
     .field1 {
         padding: 5px 10px;
         margin-bottom: 10px;
@@ -780,55 +872,55 @@ form .btn2 {
         border-radius: 10px;
         transition: 0.5s;
     }
-    
+
     .field1:hover {
         border: 1.2px solid #fff;
     }
-    
+
     .field1 h3 {
         text-align: center;
         color: #8ab5e6;
     }
-    
-    
+
+
     .part1 {
         display: flex;
         /* align-items: center; */
         /* justify-content: center; */
     }
-    
+
     .skill {
         font-size: 0.8rem;
         padding: 10px 20px;
         color: #41b88c;
         /* background-color: #41b88c; */
     }
-    
+
     .skill i {
         padding: 5px;
     }
-    
+
     .skill p {
         /* margin-left: 30px; */
         font-size: 0.8rem;
         padding-left: 30px;
     }
-    
+
     .part2 {
         display: flex;
         /* align-items: center; */
         /* justify-content: center; */
     }
-    
+
     .part2 p {
         /* margin-left: 40px; */
         padding-left: 30px;
     }
-    
+
     .sk2 {
         padding-left: 40px;
     }
-    
+
     .field2 {
         padding: 15px 15px;
         margin-left: 20px;
@@ -837,27 +929,28 @@ form .btn2 {
         border-radius: 10px;
         transition: 0.5s;
     }
-    
+
     .field2:hover {
         border: 1.2px solid #fff;
     }
-    
+
     .field2 h3 {
         text-align: center;
         color: #8ab5e6;
     }
-    
-    
+
+
     .sk3 {
         padding-left: 40px;
     }
+
     /* ----------------projects------------------- */
 
     #portfolio {
         padding: 30px;
         background: #1c0522;
     }
-    
+
     #portfolio p {
         font-size: 0.6rem;
         padding-top: 30px;
@@ -865,17 +958,17 @@ form .btn2 {
         color: #fff;
         text-shadow: 2px 4px 5px #b7b7b7;
     }
-    
+
     #portfolio h1 {
         width: 100%;
         text-align: center;
         /* padding-bottom: 20px; */
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         color: #fff;
         text-shadow: 2px 4px 5px #b7b7b7;
     }
-    
-    
+
+
     .work-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -883,7 +976,7 @@ form .btn2 {
         margin-top: 30px;
         /* background-color: #235e69; */
     }
-    
+
     .work img {
         height: 280px;
         width: 100%;
@@ -891,14 +984,14 @@ form .btn2 {
         display: block;
         transition: transform 0.5s;
     }
-    
+
     .work {
         border-radius: 10px;
         position: relative;
         overflow: hidden;
         /* background-color: #a1143a; */
     }
-    
+
     .layer {
         width: 100%;
         height: 0px;
@@ -918,14 +1011,14 @@ form .btn2 {
         transition: height 0.5s;
         /* background-color: #fff685; */
     }
-    
+
     .layer h3 {
         font-size: 1rem;
         font-weight: 500;
         /* margin-bottom: 10px; */
         color: #fff;
     }
-    
+
     .layer a {
         margin-top: 20px;
         color: #41b88c;
@@ -938,19 +1031,19 @@ form .btn2 {
         border-radius: 50%;
         text-align: center;
     }
-    
-    
+
+
     .work:hover img {
         transform: scale(1.1);
         cursor: pointer;
-    
+
     }
-    
+
     .work:hover .layer {
         height: 100%;
         cursor: pointer;
     }
-    
+
     .btn {
         display: block;
         margin: 50px auto;
@@ -963,14 +1056,14 @@ form .btn2 {
         transition: background 0.5s;
         font-size: 1rem;
     }
-    
+
     .btn:hover {
         background: #3d67ab;
-    
+
     }
 
     /* --------------------------contact------------------ */
-    
+
     .row {
         /* background-color: #235e69; */
         display: inline;
@@ -978,63 +1071,63 @@ form .btn2 {
         /* height: 600px; */
         padding: 10px;
         align-items: center;
-    
+
     }
-    
+
     .contact-left {
         /* background-color: #00ddff; */
         flex-basis: 20%;
         /* height: 400px; */
     }
-    
+
     .contact-left h1 {
         width: 100%;
         text-align: center;
         /* padding-bottom: 20px; */
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         color: #fff;
         text-shadow: 2px 4px 5px #b7b7b7;
     }
-    
+
     .contact-right {
         /* background-color: #ff1d58; */
         flex-basis: 50%;
         display: inline;
     }
-    
+
     .contact-left a {
         text-decoration: none;
         color: white;
     }
-    
+
     .contact-left p {
-    
+
         margin-top: 30px;
         padding-left: 30px;
         text-decoration: none;
         color: #fff;
     }
-    
+
     .contact-left p a {
         transition: transform 0.5s;
     }
-    
+
     .contact-left p a:hover {
         color: #41b88c;
         transform: translateY(-5px);
     }
-    
+
     .contact-left p i {
         color: #41b88c;
         margin-right: 15px;
         font-size: 25px;
     }
-    
+
     .social-icons {
         margin-top: 30px;
         padding-left: 30px;
     }
-    
+
     .social-icons a {
         text-decoration: none;
         font-size: 30px;
@@ -1043,12 +1136,12 @@ form .btn2 {
         display: inline-block;
         transition: transform 0.5s;
     }
-    
+
     .social-icons a:hover {
-        color: #0062ff;
+        color: #41b88c;
         transform: translateY(-5px);
     }
-    
+
     .btn.btn2 {
         display: block;
         margin: 50px auto;
@@ -1061,17 +1154,18 @@ form .btn2 {
         transition: background 0.5s;
         font-size: 1rem;
     }
+
     .btn:hover {
         background: #3d67ab;
-    
+
     }
-    
+
     .contact-right form {
         width: 100%;
         padding: 0px 30px;
-    
+
     }
-    
+
     form input,
     form textarea {
         width: 100%;
@@ -1079,19 +1173,19 @@ form .btn2 {
         outline: none;
         background: #262626;
         padding: 15px;
-        margin: 15px 0;
+        margin: 5px 0;
         color: #fff;
         font-size: 18px;
         border-radius: 6px;
     }
-    
+
     form .btn2 {
         padding: 14px 60px;
         font-size: 18px;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         cursor: pointer;
     }
-    
+
     .copyright {
         width: 100%;
         text-align: center;
@@ -1099,9 +1193,9 @@ form .btn2 {
         background: #1c0522;
         font-weight: 300;
         margin-top: 20px;
-    
+
     }
-    
+
     .copyright p {
         color: #fff;
     }
