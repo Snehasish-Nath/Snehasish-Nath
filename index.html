@@ -147,7 +147,7 @@
 
                         </div>
                         <div class="skill">
-                            <i class="fa-regular fa-circle-check"></i> Node JS
+                            <i class="fa-regular fa-circle-check"></i> Node.js
                             <p>Beginner</p>
 
                         </div>
@@ -186,7 +186,8 @@
                     <p>I accurately recreated Amazon's desktop version using HTML5 and CSS, demonstrating strong coding
                         skills. The outcome is a visually appealing and user-friendly interface that closely resembles
                         the original website.</p>
-                    <a href="Amazon-clone/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://snehasish-nath.github.io/Amazon-clone/"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
 
             </div>
@@ -195,7 +196,8 @@
                 <div class="layer">
                     <h3>The Talking Foods</h3>
                     <p>Creating a Website for the Foodie people.</p>
-                    <a href="Food-Website/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://snehasish-nath.github.io/Food-Website/"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -205,7 +207,7 @@
                     <p>Developing MovieDhundo, a movie recommendation website, using Python as the backend and HTML5,
                         CSS
                         for the frontend design, resulting in an intuitive and responsive user interface.</p>
-                    <a href="MovieDhundo/Front-End/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/Snehasish-Nath/MRS"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -248,12 +250,13 @@
 
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
 
@@ -275,6 +278,29 @@
         function closemenu() {
             sidemenu.style.right = "-200px";
         }
+    </script>
+
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTmhq3vID7CRp6a2hQXLYIswMh8emMkTopRgcKKqfd-6z5zAk1crIM_kTyIOfsSyObog/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent."
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 
